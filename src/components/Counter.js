@@ -17,6 +17,10 @@ class Counter extends Component {
     setTimeout(() => this.props.increment(), 1000);
   };
 
+  incrementInterval = () => {
+    let interval = setInterval(() => this.props.increment(), 1000);
+  };
+
   render() {
     // Fill in the two button onClick methods
     // Upon clicking these buttons, the count
@@ -30,6 +34,7 @@ class Counter extends Component {
                 around to implementing the extra credit functions */}
         <button onClick={this.incrementIfOdd}>Increment if odd</button>{' '}
         <button onClick={this.incrementAsync}>Increment async</button>
+        <button onClick={this.incrementInterval}>Increment Interval</button>
       </p>
     );
   }
