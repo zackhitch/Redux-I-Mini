@@ -18,7 +18,7 @@ class Counter extends Component {
   };
 
   incrementInterval = () => {
-    let interval = setInterval(() => this.props.increment(), 1000);
+    setInterval(() => this.props.increment(), 1000);
   };
 
   render() {
